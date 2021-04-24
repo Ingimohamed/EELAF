@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/Compound-Path.png" type="image/png" sizes="16x16">
+
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.3.1/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <title>EELAF</title>
+  </head>
+  <body>
+    <!-- Nav larg screen -->
+    <section id="side_nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="index.html" class="a_logo_link position-relative header-logo-cont">
+          <img class="position-absolute header-logo" src="images/header-logo.png" alt="">
+        </a>
+        <!-- <span id="openbtn" class="open_nav_link" onclick="openNav()">&#9776;</span> -->
+            <div  class="open_nav_link" id="toggle_container" >
+                <div class="circle icon">
+                    <span class="line top"></span>
+                    <span class="line middle"></span>
+                    <span class="line bottom"></span>
+                </div>
+            </div>
+            <div class="login-signup-text">
+                <a class="login_position" href="#">LOGIN</a>
+              
+                <a class="signup_position" href="#">SIGN UP</a>
+            </div>
+          <!-- <a href="javascript:void(0)" id="closebtn" class="closebtn" onclick="closeNav()">&times;</a> -->
+         <div id="links" class="menu_bg" style="display:none;">
+            <a class="animate__animated animate__fadeInLeft delay-1" href="#">HOME</a>
+            <a class="animate__animated animate__fadeInLeft delay-2" href="#">ABOUT US</a>
+            <a class="animate__animated animate__fadeInLeft delay-3" href="#">PRODUCTS</a>
+            <a class="animate__animated animate__fadeInLeft delay-4" href="#">SERVICES</a>
+            <a class="animate__animated animate__fadeInLeft delay-5" href="#">CAREERS</a>
+            <a class="animate__animated animate__fadeInLeft delay-6" href="#">REQUEST A QUOTE</a>
+            <a class="animate__animated animate__fadeInLeft delay-7" href="#">CONTACT US</a>
+         </div>
+        </div>
+    </section>
+
+  <!-- Nav Mobile screen -->
+   <section id="mobileNav">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="d-flex flex-grow-1">
+          <!-- <span class="w-100 d-lg-none d-block mt-auto mb-auto">
+          
+          </span> -->
+          <a class="navbar-brand mx-0 w-100 img-a" href="#">
+            <img class="img-fluid img-nav-logo" src="images/mobile-nav-logo.png" alt="">
+          </a>
+          <!-- <div class="w-100 text-right">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div> -->
+          <div id="wrapper" class="w-100 text-right" type="button" data-toggle="collapse" data-target="#myNavbar">
+            <div class="circle icon navbar-toggler">
+              <span class="line top d-block"></span>
+              <span class="line middle d-block"></span>
+              <span class="line bottom d-block"></span>
+            </div>
+            </div>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-1 text-right menu_bg" id="myNavbar">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+              <li class="nav-item">
+                  <a href="#" class="text-center nav-link animate__animated animate__fadeInDown delay-1"> HOME</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="text-center nav-link animate__animated animate__fadeInDown delay-2">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="text-center nav-link animate__animated animate__fadeInDown delay-3">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="text-center nav-link  animate__animated animate__fadeInDown delay-4">SERVICES</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="text-center nav-link  animate__animated animate__fadeInDown delay-5">CAREERS</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="text-center nav-link  animate__animated animate__fadeInDown delay-6">REQUEST A QUOTE</a>
+              </li>
+              <li class="nav-item">
+              <a href="#" class="text-center nav-link  animate__animated animate__fadeInDown delay-7">CONTACT US</a>
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="nav-item">
+                <a href="#" class="text-center nav-link  animate__animated animate__fadeInDown delay-7 red_hover">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                  <a href="#" class="text-center nav-link  animate__animated animate__fadeInDown delay-7 red_hover">SIGN UP</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+   </section>
+  
+<!-- All Sections -->
+<section id="all_sections">
+ <!-- Page 1 -->   
+   <section id="homepage">
+
+        <div class="slider_section position-relative" id="slider_section">
+  
+          <div class="carousel-phone position-absolute">
+              <p class="have-question">HAVE QUESTIONS?<span class="phone-text">+20 (2) 2516 3092</span></p>
+          </div>
+
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            
+                <ol class="carousel-indicators carousel-indicators-svg">
+
+                  <li data-target="#carouselExampleFade" data-slide-to="0"  class="active">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 149.66 223.935" class="dimensions_svg_e">
+                      <path id="Path_1" data-name="Path 126" d="M410.274,346.386h91.634V302.261H410.274V259.232h101.1v-43.6H363.251V438.572h148.66v-43.6H410.274Z" transform="translate(-362.751 -215.137)" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1"/>
+                    </svg>
+                  </li>
+
+                  <li data-target="#carouselExampleFade" data-slide-to="1" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="149.66" height="223.935" viewBox="0 0 149.66 223.935" class="Path_2 dimensions_svg_e">
+                      <path id="Path_2" data-name="Path 126" d="M410.274,346.386h91.634V302.261H410.274V259.232h101.1v-43.6H363.251V438.572h148.66v-43.6H410.274Z" transform="translate(-362.751 -215.137)" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1"/>
+                  </svg>
+                  </li>
+
+                  <li data-target="#carouselExampleFade" data-slide-to="2" class="max-width_l">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="141.7" height="223.935" viewBox="0 0 141.7 223.935" class="Path_3 dimensions_svg_l">
+                      <path id="Path_3" data-name="Path 128" d="M456.631,215.637H409.337V438.572H535.153l14.688-43.6h-93.21Z" transform="translate(-408.837 -215.137)" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1"/>
+                  </svg>
+                  </li>
+
+                  <li data-target="#carouselExampleFade" data-slide-to="3" class="max-width_a">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 222.302 223.929" class="Path_4 dimensions_svg_a">
+                      <path id="Path_4" data-name="Path 129" d="M505.74,215.637,427.893,438.566h49.36l18.374-50.594H580.8l18.649,50.594h49.343L570.94,215.637Zm59.448,128.476H511.224L538.2,254.686Z" transform="translate(-427.189 -215.137)" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1"/>
+                  </svg>
+                  </li>
+
+                  <li data-target="#carouselExampleFade" data-slide-to="4" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 148.849 223.935" class="Path_5 dimensions_svg_f">
+                      <path id="Path_5" data-name="Path 130" d="M605.247,259.231V215.637H457.4V438.572h47.023V346.385H604.838V302.261H504.421V259.231Z" transform="translate(-456.898 -215.137)" fill="rgba(255,255,255,0.1)" stroke="#fff" stroke-width="1"/>
+                  </svg>  
+                  </li>
+
+                </ol>
+
+                  <ol class="carousel-indicators carousel-indicators2 carousel-indicators_lines">
+                    <li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="1" class=""></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="2" class=""></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="3" class=""></li>
+                    <li data-target="#carouselExampleFade" data-slide-to="4" class=""></li>
+                  </ol>
+
+
+                  <div class="slider_text_and_btn">
+
+                    <div class=" carousel-text">
+                      <p class="text-center slider-text mt-5">Evolving product features and technology to basically
+                          <span class="slider-text-span">designed to suit all needs and all kinds of environments</span> </p>
+                    </div>
+                    <div class="carousel-button" data-aos="fade-up" data-aos-offset="200"
+                    data-aos-delay="1000"
+                    data-aos-duration="500"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    >
+                      <button class="btn readmore_btn"> READ MORE <img class="arrow-img" src="images/arrow.png" alt=""></button>
+                    </div>
+
+                  </div>
+                  
+
+                  <div class="carousel-indicators carousel-mouse-img">
+                    <a class="mouse-click" href="#why_choose_us_section"><img class="mouse-img" src="images/mouse-click.png" alt="go down"></a>
+                  </div>
+
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="images/img-slider-1.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/img-slider-2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/img-slider-3.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/img-slider-4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/img-slider-5.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="carousel-social-icons">
+                <a href="#">
+                  <img class="facebook-img" src="images/facebook-icon.png" alt="facebook">
+                </a>
+              <a href="#">
+                  <img class="instagram-img" src="images/instagram.png" alt="instagram">
+              </a>
+             <a href="#">
+              <img class="youtube-img" src="images/youtube-icon.png" alt="youtube">
+             </a>
+            </div>
+
+        </div>
+   </section>
+
+<!-- Page 2 -->
+   <section id="why_choose_us_section" class="delay_products_section">
+        <div class="container" id="why_choose_us_container">
+          <div class="row ">
+              <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-delay="500"  data-aos-duration="500"> 
+                  <div class="marg_left">
+                      <img class="why_choose_us_img img-fluid  delay_img_1" id="why_choose_us_section_img" src="images/why-choose-us.png" alt="">
+                          <img class="eelaf-logo delay_img_2" src="images/white-logo.png" alt=""  data-aos="fade-right" data-aos-delay="800"  data-aos-duration="500">
+                  </div>
+              </div>
+              <div class="col-12 col-lg-6 padding" data-aos="fade-right" data-aos-delay="1000"  data-aos-duration="500">
+                  <div class="why-choose-us-text  delay_text">
+                    <p class="main_red_color font-weight-bold">Why Choose Us</p>    
+                    <h1 class="h1_dark_color">We are the most trusted 
+                        leading distributor</h1>
+                    <p class="h1_dark_color">of Electrical Equipment and Information Technology solutions.</p>
+                    
+                  </div>
+                  
+                  <ol class="order_list">
+                      <li class="why-choose-us-li delay_li_1" data-aos="fade-right" data-aos-delay="1000"  data-aos-duration="500">
+                          <p class="order_list_text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
+                          </p>
+                      </li>
+                      <li class="why-choose-us-li delay_li_2" data-aos="fade-right" data-aos-delay="1100"  data-aos-duration="500">
+                          <p class="order_list_text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore dolore magna aliqua.  
+                          </p>
+                      </li>
+                      <li class="why-choose-us-li delay_li_3" data-aos="fade-right" data-aos-delay="1200"  data-aos-duration="500">
+                          <p class="order_list_text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing sed do eiusmod tempor incididunt ut labore dolore magna aliqua. 
+                          </p>
+                      </li>
+                  </ol>
+              </div>
+          </div>
+    </div>
+   </section>
+
+  <!-- Page 3 -->
+  <section id="featured_products" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
+    <div class="container pb-4">
+      <div class="row py-5">
+        <div class="col-lg-4" data-aos="fade-left">
+          <a class="navbar-brand mr-auto">
+            <span class="white_grayColor small-size">Our Best Products</span>
+            <span class="h1_dark_color big-size">Featured products</span>
+          </a>
+        </div>
+        <div class="col-lg-8 go_bottom" data-aos="fade-left">
+          <ul class="nav nav-pills mb-3 left_end" id="pills-tab" role="tablist">
+        
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#wire_cable" role="tab" aria-controls="pills-home" aria-selected="true">Wire and Cable </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#communications" role="tab" aria-controls="pills-profile" aria-selected="false">Communications </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#security" role="tab" aria-controls="pills-contact" aria-selected="false">Security </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#networking" role="tab" aria-controls="pills-contact" aria-selected="false">Networking </a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#hardware_supplies" role="tab" aria-controls="pills-contact" aria-selected="false">Hardware and Supplies </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="tab-content" id="pills-tabContent" data-aos="fade-left">
+        <div class="tab-pane  show active" data-aos="fade-left" data-aos-offset="200"data-aos-delay="50"data-aos-duration="500"data-aos-easing="ease-in-out" id="wire_cable" role="tabpanel" aria-labelledby="pills-home-tab">
+         <div class="row">
+           <div class="col-sm-6 col-lg-3">
+            <div class="card"  >
+              <img src="images/product01.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Structured Cabling</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">ORDER PRODUCT</a>
+              </div>
+            </div>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+                         <div class="card">
+              <img src="images/product02.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Copper Patch Cords</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">ORDER PRODUCT</a>
+              </div>
+            </div>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+                         <div class="card">
+              <img src="images/product03.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gigaline Splice Box</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">ORDER PRODUCT</a>
+              </div>
+            </div>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+                         <div class="card">
+              <img src="images/product04.png" class="card-img-top img-fluid" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CAT. N° 0 327 87</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">ORDER PRODUCT</a>
+              </div>
+            </div>
+           </div>
+         </div>
+         <!--- end of the row -->
+        </div>
+        <div class="tab-pane" data-aos="fade-left" data-aos-offset="200"data-aos-delay="100"data-aos-duration="500"data-aos-easing="ease-in-out"data-aos-mirror="true"data-aos-once="false"  id="communications" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="row">
+            <div class="col-md-3">
+             <div class="card">
+               <img src="images/product01.png" class="card-img-top img-fluid" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Structured Cabling</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+               <img src="images/product02.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Copper Patch Cords</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+               <img src="images/product03.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Gigaline Splice Box</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+               <img src="images/product04.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">CAT. N° 0 327 87</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-aos="fade-left" data-aos-offset="200"data-aos-delay="100" data-aos-duration="500" id="security" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="row">
+            <div class="col-md-3">
+             <div class="card">
+               <img src="images/product01.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Structured Cabling</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+                          <div class="card">
+               <img src="images/product02.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Copper Patch Cords</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+               <img src="images/product03.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Gigaline Splice Box</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+               <img src="images/product04.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">CAT. N° 0 327 87</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-aos="fade-left" data-aos-offset="200"data-aos-delay="100" data-aos-duration="500" id="networking" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="row">
+            <div class="col-md-3">
+             <div class="card">
+               <img src="images/product05.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Structured Cabling</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+               <img src="images/product06.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Copper Patch Cords</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+                          <div class="card">
+               <img src="images/product07.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Gigaline Splice Box</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+                          <div class="card">
+               <img src="images/product08.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">CAT. N° 0 327 87</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" data-aos="fade-left" data-aos-offset="200"data-aos-delay="100" data-aos-duration="500" id="hardware_supplies" role="tabpanel" aria-labelledby="pills-contact-tab">
+          <div class="row">
+            <div class="col-md-3">
+             <div class="card">
+               <img src="images/product01.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Structured Cabling</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+                          <div class="card">
+               <img src="images/product02.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Copper Patch Cords</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+                          <div class="card">
+               <img src="images/product03.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">Gigaline Splice Box</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+            <div class="col-md-3">
+                          <div class="card">
+               <img src="images/product04.png" class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">CAT. N° 0 327 87</h5>
+                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                 <a href="#" class="btn">ORDER PRODUCT</a>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="view_more">
+        <a href="#services" class="white_grayColor text-center">View More</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Page 4 -->
+  <section id="services">
+    <div class="different_container">
+      
+        <div id="carouselServices" class="carousel slide" data-aos-duration="1000" data-aos-offset="200" data-aos="fade-down" data-ride="carousel">
+
+          <div class="carousel-inner position-absolute" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('images/img08.png')">
+
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/img09.png')">
+
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/img10.png')">
+
+            </div>
+          </div>
+
+          
+          <div class="three_columns_section container-fluid" data-aos="fade-up"  data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="services_stuff">
+                      <img src="images/ic01.png" alt="">
+                      <h2 class="text-center">DATACENTERS</h2>
+                      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+                    <a data-target="#carouselServices" data-slide-to="0"   class="active btn readmore">READ MORE <img src="images/arrow.png" alt=""></a>
+                  </div>
+                </div>
+                <div class="col-md-4 border_left_right pad_top_bottom">
+                <div class="services_stuff">
+                  <img src="images/ic02.png" alt="">
+                  <h2 class="text-center marg_bottom">ELECTRICAL CONTRACTING SERVICES</h2>
+                  <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+                  <a data-target="#carouselServices" data-slide-to="1"   class="btn readmore">READ MORE <img src="images/arrow.png" alt=""></a> 
+               </div>
+                </div>
+                <div class="col-md-4 pad_top_bottom">
+                  <div class="services_stuff">
+                  <img src="images/ic03.png" alt="">
+                  <h2 class="text-center">SOLAR POWER</h2>
+                  <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </p>
+                  <a data-target="#carouselServices" data-slide-to="2"   class="btn readmore">READ MORE <img src="images/arrow.png" alt=""></a>
+               </div>
+                </div>
+              </div> 
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- footer page 5 -->
+  <section id="footer">
+    
+    <section id="red_footer" class="red-footer-delay" data-aos="fade-down">
+      <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-md-12 col-12 red-footer-col justify-content-center" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+              <h1>SUBSCRIBE NEWSLETTER</h1>
+              <p>
+                  Get all the latest information on Events,Sales and Offers
+                           <span>Sign up for newsletter today</span>
+               </p>
+               <div class="input-group mb-3 col-md-6">
+                 <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="input-group-text" id="basic-addon2">SUBSCRIBE</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+  
+    <section id="dark_footer" class="wow dark-footer-delay" data-aos="fade-down">
+      <div class="container pt-5">
+        <div class="row dark-footer-row" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+          <div class="col-md-3 col-12">
+            <img class="footer_logo" src="images/white-logo.png" alt="eelaf">
+          </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Products</a>
+              </li>
+              <li>
+                <a href="#!">Services</a>
+              </li>
+              <li>
+                <a href="#!">My Account</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Careers</a>
+              </li>
+              <li>
+                <a href="#!">Request A Quote</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+              <li>
+                <a href="#!">Orders History</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">Instagram</a>
+              </li>
+              <li>
+                <a href="#!">Youtube</a>
+              </li>
+              <li>
+                <a href="#!">Linked In</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">14 A/1 El Nasr Street, Ma'adi, Cairo, Egypt</a>
+              </li>
+              <li>
+                <a href="#!">PHONE: +20 (2) 2516 3092</a>
+              </li>
+              <li>
+                <a href="#!">EMAIL: Info@Eelaf.Com</a>
+              </li>
+              <li>
+                <a href="#!">Sun- Thu/ 9:00 AM - 5:00 PM</a>
+              </li>
+            </ul>
+          </div>
+            <div class="col-md-12 pt-5">
+                <p class="text-center white_grayColor">Copyright © 2020 <span class="main_red_color">Plementus</span> All Rights Reserved.</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+  </section>
+</section>
+
+
+
+
+
+
+   <!-- <script src="js/wow.min.js"></script> -->
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap-4.3.1/bootstrap-4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <!-- for toggle button -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
